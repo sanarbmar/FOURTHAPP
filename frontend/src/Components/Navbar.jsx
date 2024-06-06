@@ -24,7 +24,7 @@ function Navbar() {
                     <Link to="/usuario">
                         <i className='bi bi-person fs-3 me-4'></i>
                     </Link>
-                    <Link to="/checkout">
+                    <Link to="/checkout" id='carrito'>
                         <i className='bi bi-cart fs-3'><strong>{cart.cart.length}</strong></i>
                     </Link>
                 </div>

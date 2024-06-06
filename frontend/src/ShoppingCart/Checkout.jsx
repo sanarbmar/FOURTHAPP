@@ -26,7 +26,7 @@ function Checkout() {
                                         <img src={item.Image} alt='' className='w-75 h-75 entera' />
                                         <h3>{item.Name}</h3>
                                         <p>{item.Price}</p>
-                                        <button onClick={() => dispatch(removefromcart(item.id))} className='btn bg-primary w100 rounded-2'>Remove</button>
+                                        <button onClick={() => dispatch(removefromcart(item.id))} className='btn bg-primary w100 rounded-2' id='btn-remove'>Remove</button>
 
                                     </div>
                                 )

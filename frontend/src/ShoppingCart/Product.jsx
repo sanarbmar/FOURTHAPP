@@ -15,7 +15,7 @@ function Product({ id, Image, Name, Price, Color }) {
                     <h3>{Name}</h3>
                     <p>{Price}</p>
                     <button onClick={() => dispatch(addtocart(id, Image, Name, Price, Color))}
-                     className='btn bg-white w100 rounded-2'>Add to Cart</button>
+                     className='btn bg-white w100 rounded-2' id={`addCar-${id}`}>Add to Cart</button>
 
                 </div>
             </div>

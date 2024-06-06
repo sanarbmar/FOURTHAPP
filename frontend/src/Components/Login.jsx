@@ -49,13 +49,13 @@ function Login() {
                         <label htmlFor='email'><strong>Email</strong></label>
                         <input type="email" placeholder="Enter Email" name='email'
                             onChange={handleInput} className='form-control rounded-0'></input>
-                        {errors.email && <span className='text-danger'>{errors.email}</span>}
+                        {errors.email && <span className='text-danger' id='email-error'>{errors.email}</span>}
                     </div>
                     <div className='mb-3'>
                         <label htmlFor='password'><strong>Password</strong></label>
                         <input type="password" placeholder="Enter password" name='password'
                             onChange={handleInput} className='form-control rounded-0'></input>
-                        {errors.password && <span className='text-danger'>{errors.password}</span>}
+                        {errors.password && <span className='text-danger' id='password-error'>{errors.password}</span>}
                     </div>
 
                     <button type='submit' className='btn btn-success w-100 rounded-10' onClick={handleSubmit}> <strong>Log In</strong></button>

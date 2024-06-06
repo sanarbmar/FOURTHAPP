@@ -18,7 +18,7 @@ function Products() {
                     <h3 className='text-success'>
                         Nuestra Carta De Productos X gramo
                     </h3>
-                    
+
                 </div>
 
                 <div className='row mt-5'>
@@ -27,24 +27,29 @@ function Products() {
                         Name="Albinos A++"
                         Price="20000"
                         Color="p1Color"
+                        id="albinos"
                     />
+                   
                     <Product
                         Image={Product2}
                         Name="Golden Teacher"
                         Price="10000"
                         Color="p2Color"
+                        id="golden"
                     />
                     <Product
                         Image={Product3}
                         Name="B +"
                         Price="20000"
                         Color="p3Color"
+                        id="bpositive"
                     />
                     <Product
                         Image={Product4}
                         Name="Maza"
                         Price="20000"
                         Color="p3Color"
+                        id="maza"
                     />
 
                     <Product
@@ -52,6 +57,7 @@ function Products() {
                         Name="Amazonian"
                         Price="20000"
                         Color="p3Color"
+                        id="tahi"
                     />
 
                     <Product
@@ -59,9 +65,10 @@ function Products() {
                         Name="Amazonian"
                         Price="20000"
                         Color="p3Color"
+                        id="amazonian"
                     />
 
-                   
+
                     {/* <div className='col-12 col-md-8'>
                         <div className='p-1'>
                             <div className='border shadow-sm d-flex p4Color'>

@@ -92,7 +92,7 @@ app.post('/login', (req, res) => {
 });
 
 app.get('/usuario', (req, res) => {
-    db.query('SELECT * FROM USUARIO ', (err, result) => {
+    db.query('SELECT * FROM USUARIO WHERE ID_USUARIO = 1 ', (err, result) => {
         if (err) {
             console.error('Error al obtener productos desde MySQL:', err);
             res.status(500).send('Error interno del servidor');

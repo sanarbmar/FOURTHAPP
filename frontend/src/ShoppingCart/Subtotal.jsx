@@ -7,7 +7,7 @@ function Subtotal() {
   return (
     <div className="subtotal">
         <div className="subtotal_area">
-            <p>SubTotal ({cart.cart.length} items): ${getTotal(cart.cart)}</p>
+            <p>SubTotal ({cart.cart.length} items):<span>${getTotal(cart.cart)}</span> </p>
             <button>Procced to cheek</button>
         </div>
     </div>

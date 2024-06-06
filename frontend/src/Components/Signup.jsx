@@ -60,21 +60,21 @@ function Signup() {
                         <label htmlFor='name' >Name</label>
                         <input type="text" placeholder="Enter Name" name='name'
                             onChange={handleInput} className='form-control rounded-0'></input>
-                        {errors.name && <span className='text-danger'>{errors.name}</span>}
+                        {errors.name && <span className='text-danger' id='name-error'>{errors.name}</span>}
 
                     </div>
                     <div className='mb-3'>
                         <label htmlFor='email' name='Email'>Email</label>
                         <input type="email" placeholder="Enter Email" name='email'
                             onChange={handleInput} className='form-control rounded-0'></input>
-                        {errors.email && <span className='text-danger'>{errors.email}</span>}
+                        {errors.email && <span className='text-danger' id='email-error'>el email no debe estar vacio</span>}
 
                     </div>
                     <div className='mb-3'>
                         <label htmlFor='password' name='Password'>Password</label>
                         <input type="password" placeholder="Enter password" name='password'
                             onChange={handleInput} className='form-control rounded-0'></input>
-                        {errors.password && <span className='text-danger'>{errors.password}</span>}
+                        {errors.password && <span className='text-danger' id='password-error'>{errors.password}</span>}
 
                     </div>
 
